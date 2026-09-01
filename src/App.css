@@ -1,0 +1,16 @@
+/* إلغاء جميع القيود الجانبية وتوسيع الكروت كلياً */
+#root, body, main {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* توحيد عرض جميع كروت الأقسام وتقليل الهوامش الجانبية */
+.section-card, 
+div[style*="max-width"] {
+  max-width: 1350px !important; /* تكبير العرض لتسحب الكروت الشاشة كاملة */
+  width: 95% !important;        /* تصغير الهوامش الجانبية لأقل قدر ممكن */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

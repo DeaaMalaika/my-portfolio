@@ -2,11 +2,12 @@ backend:
   name: github
   repo: DeaaMalaika/my-portfolio
   branch: main
-  base_url: https://decap-cms-oauth.vercel.app
-  auth_endpoint: /auth
+  base_url: https://decap-cms-oauth-provider.vercel.app
 
 media_folder: "public/uploads"
-public_folder: "/uploads"collections:
+public_folder: "/uploads"
+
+collections:
   - name: "about"
     label: "عني"
     files:

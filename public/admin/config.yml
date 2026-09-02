@@ -3,8 +3,8 @@ backend:
   repo: DeaaMalaika/my-portfolio
   branch: main
   base_url: https://decap-bridge.vercel.app
-  auth_endpoint: /api/auth
-media_folder: "public/uploads"
+  auth_endpoint: /api/aut 
+  hmedia_folder: "public/uploads"
 public_folder: "/uploads"
 collections:
   - name: "about"

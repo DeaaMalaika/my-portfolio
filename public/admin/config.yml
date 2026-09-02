@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "about"
+    label: "النبذة الشخصية"
+    files:
+      - file: "src/content/about.json"
+        label: "معلومات عني"
+        name: "about_info"
+        fields:
+          - { label: "الاسم", name: "name", widget: "string" }
+          - { label: "المسمى الوظيفي", name: "title", widget: "string" }
+          - { label: "النبذة التعريفية", name: "bio", widget: "text" }
+
+  - name: "projects"
+    label: "المشاريع"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "اسم المشروع", name: "title", widget: "string" }
+      - { label: "الوصف", name: "description", widget: "text" }
+      - { label: "صورة المشروع", name: "image", widget: "image" }
+
+  - name: "certificates"
+    label: "الشهادات"
+    folder: "src/content/certificates"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "عنوان الشهادة", name: "title", widget: "string" }
+      - { label: "الجهة المانحة", name: "issuer", widget: "string" }
+      - { label: "صورة الشهادة", name: "image", widget: "image" }

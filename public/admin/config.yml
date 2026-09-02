@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo:DeaaMalaika/my-portfolio
+  repo: DeaaMalaika/my-portfolio
   branch: main
 
 media_folder: "public/uploads"
